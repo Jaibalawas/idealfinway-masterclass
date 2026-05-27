@@ -478,7 +478,7 @@ function backStep(){
 }
 function goPay(){
   fbq('track','Purchase',{content_name:'CPR Masterclass',currency:'INR',value:99});
-  if(PAYMENT_URL==='https://rzp.io/rzp/V7vW84B'){alert('Payment link coming soon! Please contact us on WhatsApp: +91-98173-51153');return;}
+  
   window.location.href=PAYMENT_URL+'?name='+encodeURIComponent(userData.name)+'&phone='+encodeURIComponent(userData.phone)+'&email='+encodeURIComponent(userData.email||'');
 }
 function toggleFaq(el){
